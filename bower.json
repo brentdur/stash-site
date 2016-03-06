@@ -1,0 +1,23 @@
+{
+  "name": "stash",
+  "description": "A website for Stash",
+  "main": "index.html",
+  "authors": [
+    "Brenton Durkee <brentdur@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/brentdur/stash-site",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "neat": "^1.7.4"
+  }
+}
