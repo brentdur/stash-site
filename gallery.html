@@ -20,15 +20,22 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav>
-            <ul>
-                <li><a href="/">Logo</a></li>
-                <li><a href="social">Social</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li><a href="about">About Us</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
+        <header class="navigation" role="banner">
+          <div class="navigation-wrapper">
+          <a href="/" class="logo">
+              <img src="img/smallLogo.png" alt="Logo Image">
+            </a>
+            <nav role="navigation" class="flex-list">
+              <ul class="navigation-menu show">
+                <li class="nav-link"><a href="social">Social</a></li>
+                <li class="nav-link"><a href="gallery">Gallery</a></li>
+                <li class="nav-link"><a href="about">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div id="hero" class="hero">
             <div class="hero-inner">
             <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
         " alt="Logo Image"></a>
@@ -38,13 +45,21 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <ul>
-                <li>Copyright Stash LLC est. 2015</li>
-                <li><a href="privacy">Privacy Policy</a></li>
-                <li><a href="contact">Contact Us</a></li>
-                <li><a href="involved">Get Involved</a></li>
+        <footer class="footer-2" role="contentinfo">
+            <ul class="copyright">
+                <li><i>Copyright Stash LLC est. 2015</i></li>
             </ul>
+            <div class="flex-list">
+                <ul>
+                  <li><a href="privacy">Privacy Policy</a></li>
+                  <li><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-secondary-links">
+              <ul>
+                <li><a href="involved">Get Involved</a></li>
+              </ul>
+            </div>
         </footer>
 
         

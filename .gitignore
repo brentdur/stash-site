@@ -1,2 +1,4 @@
 node_modules
+*.map
+.sass-cache
 bower_components
