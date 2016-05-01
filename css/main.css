@@ -1,11 +1,25 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.active {
+  font-weight: bold; }
+
+.cta {
+  background-color: white;
+  border: none;
+  border-radius: 11px;
+  height: 45px;
+  width: 20%;
+  margin-bottom: 35px;
+  font-size: 21pt; }
+
 .hero {
+  font-family: 'PT Sans', sans-serif;
   background: url("../img/background.png"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background: url("../img/background.png"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background-color: #324766;
@@ -13,10 +27,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
+  background-position-y: -70px;
   height: 73.5vh; }
   .hero .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em; }
+    height: 10em;
+    margin-bottom: 1em;
+    margin-top: 10vh; }
   .hero .hero-inner {
     max-width: 1200px;
     margin-left: auto;
@@ -47,12 +63,16 @@ html {
         margin: 0 auto 3em auto; }
         @media screen and (min-width: 53.75em) {
           .hero .hero-inner .hero-copy p {
-            font-size: 1.1em;
-            max-width: 40%; } }
+            /*font-size: 1.1em;*/
+            font-size: 18pt;
+            /*max-width: 40%;*/ } }
+    .hero .hero-inner .hero-standout {
+      background-color: white; }
 
 .flex-list {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline; }
 
 .flex-list ul {
   display: flex;
@@ -80,6 +100,7 @@ html {
 
 /* Navigation Refills */
 header.navigation {
+  font-family: 'PT Sans', sans-serif;
   /*$navigation-color: transparentize(white, 0.3);*/
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
@@ -315,6 +336,7 @@ header.navigation {
 
 /* Refills Footer */
 .footer-2 {
+  font-family: 'PT Sans', sans-serif;
   background: #fff;
   display: inline-block;
   padding: 1.5em;
@@ -352,30 +374,36 @@ header.navigation {
     text-decoration: none; }
     .footer-2 ul li a:focus, .footer-2 ul li a:hover {
       color: black; }
-  @media screen and (min-width: 53.75em) {
-    .footer-2 .footer-secondary-links {
-      float: right; } }
-  .footer-2 .footer-secondary-links li {
-    font-size: 0.8em; }
-  .footer-2 .footer-secondary-links ul.footer-social {
-    margin: 1em 0 0 0; }
+  .footer-2 .footer-secondary-links {
+    padding-right: 3%; }
     @media screen and (min-width: 53.75em) {
-      .footer-2 .footer-secondary-links ul.footer-social {
-        float: right;
-        margin-top: 0; } }
-    .footer-2 .footer-secondary-links ul.footer-social li {
-      float: left;
-      font-size: 1em;
-      line-height: 0;
-      margin: 0;
-      padding-right: 0.7em; }
-      .footer-2 .footer-secondary-links ul.footer-social li:last-child {
-        padding-right: 0; }
-    .footer-2 .footer-secondary-links ul.footer-social img {
-      height: 1.6em;
-      opacity: 0.7;
-      padding: 1px; }
-      .footer-2 .footer-secondary-links ul.footer-social img:focus, .footer-2 .footer-secondary-links ul.footer-social img:hover {
-        opacity: 1; }
+      .footer-2 .footer-secondary-links {
+        float: right; } }
+    .footer-2 .footer-secondary-links li {
+      font-size: 0.8em; }
+    .footer-2 .footer-secondary-links ul li a {
+      font-size: 20pt;
+      font-weight: bold;
+      font-family: 'PT Sans', sans-serif; }
+    .footer-2 .footer-secondary-links ul.footer-social {
+      margin: 1em 0 0 0; }
+      @media screen and (min-width: 53.75em) {
+        .footer-2 .footer-secondary-links ul.footer-social {
+          float: right;
+          margin-top: 0; } }
+      .footer-2 .footer-secondary-links ul.footer-social li {
+        float: left;
+        font-size: 1em;
+        line-height: 0;
+        margin: 0;
+        padding-right: 0.7em; }
+        .footer-2 .footer-secondary-links ul.footer-social li:last-child {
+          padding-right: 0; }
+      .footer-2 .footer-secondary-links ul.footer-social img {
+        height: 1.6em;
+        opacity: 0.7;
+        padding: 1px; }
+        .footer-2 .footer-secondary-links ul.footer-social img:focus, .footer-2 .footer-secondary-links ul.footer-social img:hover {
+          opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

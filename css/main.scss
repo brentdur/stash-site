@@ -1,5 +1,24 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/neat/app/assets/stylesheets/neat";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+
+.active {
+  font-weight: bold;
+}
+
+.cta {
+    background-color: white;
+    border: none;
+    border-radius: 11px;
+    height: 45px;
+    width: 20%;
+    margin-bottom: 35px;
+    font-size: 21pt;
+}
+
+.get-involved {
+
+}
 
 .hero {  
   $base-border-radius: 3px !default;
@@ -11,17 +30,21 @@
   $gradient-angle: 10deg;
   $hero-image: '../img/background.png';
 
+  font-family: 'PT Sans', sans-serif;
+
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
+  background-position-y: -70px;
   height: 73.5vh;
 
   .hero-logo img {
-    height: 4em;
+    height: 10em;
     margin-bottom: 1em;
+    margin-top: 10vh;
   }
 
   .hero-inner {
@@ -50,10 +73,15 @@
         margin: 0 auto 3em auto; 
 
         @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
+          /*font-size: 1.1em;*/
+          font-size: 18pt;
+          /*max-width: 40%;*/
         }
       }
+    }
+
+    .hero-standout {
+      background-color: white;
     }
   }
 }
@@ -62,6 +90,7 @@
 .flex-list {
     position: relative;
     overflow: hidden;
+    display: inline;
 }
 .flex-list ul {
     display: flex;
@@ -92,6 +121,9 @@
 
 /* Navigation Refills */
 header.navigation {
+
+  font-family: 'PT Sans', sans-serif;
+
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -456,6 +488,8 @@ header.navigation {
   $footer-link-color: #000;
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
+  font-family: 'PT Sans', sans-serif;
+
   background: $footer-background;
   display: inline-block;
   padding: $base-spacing;
@@ -513,12 +547,20 @@ header.navigation {
   }
 
   .footer-secondary-links {
+    padding-right: 3%;
+
     @include media($large-screen) {
       float: right;
     }
 
     li {
       font-size: 0.8em;
+    }
+
+    ul li a {
+      font-size: 20pt;
+      font-weight: bold;
+      font-family: 'PT Sans', sans-serif;
     }
 
     ul.footer-social {
