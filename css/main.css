@@ -10,13 +10,79 @@ html {
   font-weight: bold; }
 
 .cta {
-  background-color: white;
-  border: none;
-  border-radius: 11px;
-  height: 45px;
-  width: 20%;
-  margin-bottom: 35px;
-  font-size: 21pt; }
+  color: black; }
+  .cta button {
+    background-color: white;
+    border: none;
+    border-radius: 11px;
+    height: 45px;
+    width: 20%;
+    margin-bottom: 35px;
+    font-size: 21pt; }
+
+.email {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%; }
+  .email a {
+    color: white; }
+
+.content {
+  margin: 0px 20%;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif; }
+
+.outer-founder {
+  width: 25%;
+  float: left; }
+
+.inner-founder {
+  width: 50%;
+  float: left; }
+
+img.founder {
+  width: 100%; }
+
+.gallery-1 {
+  background: url("../img/gallery1.png"), no-repeat #7F99BE scroll;
+  background: url("../img/gallery1.png"), no-repeat #7F99BE scroll;
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em; }
+
+.gallery-2 {
+  background: url("../img/gallery2.png"), no-repeat #7F99BE scroll;
+  background: url("../img/gallery2.png"), no-repeat #7F99BE scroll;
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em; }
+
+.gallery-3 {
+  background: url("../img/gallery3.png"), no-repeat #7F99BE scroll;
+  background: url("../img/gallery3.png"), no-repeat #7F99BE scroll;
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em; }
+
+.caro-content {
+  font-family: 'PT Sans', sans-serif;
+  height: 73.5vh; }
+
+div.hero-contact {
+  background: url("../img/contactbkgd.png"), no-repeat #7F99BE scroll;
+  background: url("../img/contactbkgd.png"), no-repeat #7F99BE scroll;
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em; }
 
 .hero {
   font-family: 'PT Sans', sans-serif;
@@ -27,7 +93,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
-  background-position-y: -70px;
+  /*background-position-y: -70px;*/
   height: 73.5vh; }
   .hero .hero-logo img {
     height: 10em;
@@ -335,11 +401,15 @@ header.navigation {
           display: block; } }
 
 /* Refills Footer */
+.footer-line {
+  border-top: 1px solid; }
+
 .footer-2 {
   font-family: 'PT Sans', sans-serif;
   background: #fff;
   display: inline-block;
-  padding: 1.5em;
+  padding: 0 1.5em;
+  margin-top: 1.5em;
   width: 100%; }
   .footer-2 .footer-logo {
     margin-bottom: 1em;

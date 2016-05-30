@@ -7,6 +7,8 @@
 }
 
 .cta {
+  color: black;
+  button {
     background-color: white;
     border: none;
     border-radius: 11px;
@@ -14,10 +16,117 @@
     width: 20%;
     margin-bottom: 35px;
     font-size: 21pt;
+  }
+}
+
+.email {
+
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+
+  a {
+    color: white;
+  }
+}
+
+.content {
+  margin: 0px 20%;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.outer-founder {
+  width: 25%;
+  float: left;
+}
+
+.inner-founder {
+  width: 50%;
+  float: left;
+}
+
+img.founder {
+  width: 100%;
 }
 
 .get-involved {
 
+}
+
+.gallery-1 {
+  $hero-image: '../img/gallery1.png';
+  $gradient-angle: 10deg;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  @include background(url($hero-image), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+}
+
+.gallery-2 {
+  $hero-image: '../img/gallery2.png';
+  $gradient-angle: 10deg;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  @include background(url($hero-image), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+}
+
+.gallery-3 {
+  $hero-image: '../img/gallery3.png';
+  $gradient-angle: 10deg;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  @include background(url($hero-image), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+}
+
+.caro-content {
+  $hero-image-cnt: '../img/contactbkgd.png';
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  
+  $hero-color: white;
+
+  font-family: 'PT Sans', sans-serif;
+
+  
+
+  height: 73.5vh;
+
+  
+}
+
+div.hero-contact {
+  $hero-image-cnt: '../img/contactbkgd.png';
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '../img/background.png';
+  @include background(url($hero-image-cnt), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
 }
 
 .hero {  
@@ -38,7 +147,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
-  background-position-y: -70px;
+  /*background-position-y: -70px;*/
   height: 73.5vh;
 
   .hero-logo img {
@@ -478,6 +587,10 @@ header.navigation {
 
 /* Refills Footer */
 
+.footer-line {
+  border-top: 1px solid;
+}
+
 .footer-2 {
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
@@ -492,8 +605,10 @@ header.navigation {
 
   background: $footer-background;
   display: inline-block;
-  padding: $base-spacing;
+  padding: 0 $base-spacing;
+  margin-top: $base-spacing;
   width: 100%;
+  
 
   .footer-logo {
     margin-bottom: 1em;
