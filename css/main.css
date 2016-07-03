@@ -16,9 +16,12 @@ html {
     border: none;
     border-radius: 11px;
     height: 45px;
-    width: 20%;
+    /*width: 20%;*/
     margin-bottom: 35px;
     font-size: 21pt; }
+    @media screen and (max-width: 768px) {
+      .cta button {
+        /*width: none;*/ } }
 
 .email {
   position: absolute;
@@ -32,6 +35,10 @@ html {
   margin: 0px 20%;
   text-align: center;
   font-family: 'PT Sans', sans-serif; }
+  @media screen and (max-width: 768px) {
+    .content {
+      margin: 0px;
+      padding: 0px 5px; } }
 
 .outer-founder {
   width: 25%;
@@ -99,6 +106,9 @@ div.hero-contact {
     height: 10em;
     margin-bottom: 1em;
     margin-top: 10vh; }
+    @media screen and (max-width: 768px) {
+      .hero .hero-logo img {
+        height: 7em; } }
   .hero .hero-inner {
     max-width: 1200px;
     margin-left: auto;
@@ -114,6 +124,9 @@ div.hero-contact {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (max-width: 768px) {
+      .hero .hero-inner {
+        padding: 0em; } }
     .hero .hero-inner .hero-copy {
       text-align: center; }
       .hero .hero-inner .hero-copy h1 {
@@ -167,6 +180,7 @@ div.hero-contact {
 /* Navigation Refills */
 header.navigation {
   font-family: 'PT Sans', sans-serif;
+  /*$large-screen: 53.75em !default;*/
   /*$navigation-color: transparentize(white, 0.3);*/
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
@@ -192,6 +206,9 @@ header.navigation {
     max-height: 60px;
     padding-left: 1em;
     padding-right: 2em; }
+    @media screen and (max-width: 768px) {
+      header.navigation .logo {
+        padding-right: 0px; } }
     header.navigation .logo img {
       max-height: 60px;
       padding: 0.8em 0; }
@@ -204,7 +221,7 @@ header.navigation {
     padding-right: 1em;
     text-decoration: none;
     text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation .navigation-menu-button {
         display: none; } }
     header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
@@ -213,7 +230,7 @@ header.navigation {
     float: none;
     min-height: 60px;
     z-index: 9999999; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation nav {
         float: right; } }
   header.navigation ul.navigation-menu {
@@ -226,7 +243,7 @@ header.navigation {
     z-index: 9999; }
     header.navigation ul.navigation-menu.show {
       display: block; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation ul.navigation-menu {
         display: inline;
         margin: 0;
@@ -240,7 +257,7 @@ header.navigation {
     text-align: right;
     width: 100%;
     z-index: 9999; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation ul li.nav-link {
         background: transparent;
         display: inline;
@@ -253,7 +270,7 @@ header.navigation {
       color: #000;
       display: inline-block;
       text-decoration: none; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 0px) {
         header.navigation ul li.nav-link a {
           padding-right: .5em;
           padding-left: .5em; } }
@@ -264,7 +281,7 @@ header.navigation {
     padding-bottom: 3px; }
   header.navigation li.more.nav-link {
     padding-right: 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation li.more.nav-link {
         padding-right: 1em; } }
     header.navigation li.more.nav-link > ul > li:first-child a {
@@ -289,7 +306,7 @@ header.navigation {
     header.navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 0px) {
         header.navigation li.more > a {
           margin-right: 1em; } }
       header.navigation li.more > a::after {
@@ -299,34 +316,34 @@ header.navigation {
         right: 0.5em; }
     header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
       display: block; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation li.more {
         padding-right: 0.8em;
         position: relative; } }
   header.navigation ul.submenu {
     display: none;
     padding-left: 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation ul.submenu {
         left: -1em;
         position: absolute;
         top: 1.5em; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation ul.submenu .submenu.fly-out-right {
         left: 11.8em;
         top: 0; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation ul.submenu .submenu.fly-out-left {
         left: -11.8em;
         top: 0; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation ul.submenu .submenu {
         left: 11.8em;
         top: 0; } }
     header.navigation ul.submenu li {
       display: block;
       padding-right: 0; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 0px) {
         header.navigation ul.submenu li {
           line-height: 46.15385px; }
           header.navigation ul.submenu li:first-child > a {
@@ -341,7 +358,7 @@ header.navigation {
         display: inline-block;
         text-align: right;
         width: 100%; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 0px) {
           header.navigation ul.submenu li a {
             background-color: #fff;
             padding-left: 1em;
@@ -352,7 +369,7 @@ header.navigation {
     clear: both;
     display: block;
     height: 60px; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation .navigation-tools {
         background: transparent;
         clear: none;
@@ -374,7 +391,7 @@ header.navigation {
         margin: 0;
         padding: 0.5em 0.8em;
         width: 100%; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 0px) {
           header.navigation .search-bar form input[type=search] {
             width: 100%; } }
       header.navigation .search-bar form button[type=submit] {
@@ -391,7 +408,7 @@ header.navigation {
           height: 12px;
           opacity: 0.7;
           padding: 1px; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 0px) {
       header.navigation .search-bar {
         display: inline-block;
         position: relative;
